@@ -1,13 +1,14 @@
 /* Fonte*/
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 /* Estilos do body */
 body {
-    background-color: #23283b;
+    background-color: white;
     min-height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 25px 35px;
+    padding: 15px;
     border-radius: 10px;
     user-select: none;
 }
@@ -29,7 +30,7 @@ body {
 /* Visor da calculadora*/
 #display-area {
     width: 100%;
-    margin: 3vh 0;
+    margin: 1vh 0;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, minmax(40px, auto));
@@ -51,7 +52,7 @@ body {
 /* Resposta do cálculo*/
 #display-area .answerScreen {
     text-align: right;
-    color: rgba(150, 150, 150, 0.07);
+    color: white;
     height: 7px;
     line-height: 3;
     font-size: larger;
@@ -76,8 +77,8 @@ body {
 
 /* Estilos dos botões funcionais*/
 .keypad-btns .fun_btn {
-    color: #000;
-    background-color: #00e6f6;
+    color: white;
+    background: #271052;
     font-weight: bold;
 }
 
@@ -88,7 +89,7 @@ body {
 }
 
 .fun_btn:hover {
-    background-color: #00c6d4;
+    background: #6e40c9;
     cursor: pointer;
 }
 
@@ -98,4 +99,24 @@ body {
         background-color: #131313;
         align-items: flex-start;
     }
+}
+
+.social-icons {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+}
+
+.icons:hover {
+    color: #3a1d6d;;
+    transition: ease-in-out;
+    transform: scale(1.2);
 }

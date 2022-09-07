@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode/darkmode.css">
     <title>Calculadora</title>
 </head>
 <body>
+    <h1 class="title">Calculadora com DarkMode</h1>
+
+    <!-- Aqui o botão de darkmode-->
+    <div class="switch">
+        <input type="checkbox" id="night">
+    </div>
+
     <div class="container">
         <section id="display-area">
             <div class="currentInput"></div>
@@ -36,5 +45,15 @@
             <button type="button" class="fun_btn" id="evaluate" value="">=</button>
         </section>
     </div>
+    <h2>Feito por <span>Marcelo Braz</span></h2>
+    
+    <div class="social-icons">
+        <a href="https://github.com/mbrazf" target="blank" class="fa fa-github icons"></a>
+        <a href="https://www.linkedin.com/in/marcelobrazf/" target="blank" class="fa fa-linkedin icons"></a>
+      </div>
+
+    <script src="js/script.js"></script>
+    <script src="darkmode/darkmode.js"></script>
+    <script src="https://kit.fontawesome.com/23cda6e370.js" crossorigin="anonymous"></script>
 </body>
 </html>
